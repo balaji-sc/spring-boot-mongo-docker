@@ -5,14 +5,14 @@ metadata:
     name: springboot
   name: spring-controller
 spec:
-  replicas: 1
+  replicas: 2
   template:
     metadata:
       labels:
         name: springboot
     spec:
       containers:
-      - image: dockerhandson/spring-boot-mongo
+      - image: balaji84999/spring-boot-mongo
         name: springboot
         ports:
         - name: springboot
